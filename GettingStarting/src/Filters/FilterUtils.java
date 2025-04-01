@@ -1,24 +1,28 @@
 package Filters;
 
+import java.util.ArrayList;
+
 public class FilterUtils {
 
-    public static int[] filterChar(char chart, String text){
-        int total = 0;
-        int test = 1;
-
+    public static ArrayList<Integer> filterCharIndices(char chart, String text){
+        ArrayList<Integer> lost = new ArrayList<Integer>();
         for (int i = 0; i < text.length(); i++){
             char result = text.charAt(i);
-
             if (result == chart){
-                total = total + 1;
+                lost.add(i);
             }
         }
 
-        return new int[]{total, test};
+        return lost;
     }
 
-//    public static String changeChar(char charChange, int indices, String text){
-//
-//    };
+    public static String changeChar(char charChange, ArrayList<Integer> indices, String text){
+        char[] characteres = text.toCharArray();
+        for (int i = 0; i < indices.size(); i++){
+            characteres[indices.get(i)] = charChange;
+        }
+        String textReformer = new String(characteres);
+        return  textReformer;
+    };
 
 }
