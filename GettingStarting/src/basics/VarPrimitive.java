@@ -22,8 +22,11 @@ public class VarPrimitive {
 
 
         /* Boolean > 1 bit (Default bool is false) */
+        boolean logic = Boolean.TRUE; // or false > This is once Instance
         boolean a = true;
         boolean b = false;
+        boolean equal = (1 + 2  ==  3); // true
+        //System.out.println("equal = " + equal);
 
         /* String (Default char is u0000) */
         // 16 bites -> 2  byte
