@@ -25,6 +25,25 @@ public class StringMethods {
         System.out.println("strL.contains(\"z\") = " + strL.contains("z")); // => False, is same the last one
         System.out.println("strL.startsWith() = " + strL.startsWith("Jhon")); // => True
         System.out.println("strL.endsWith(\"<>\") = " + strL.endsWith("<>")); // => False
-        System.out.println("  Jhon Doe End Examples  ".trim()); // take spaces
+
+
+        // --- at arrays length is an attribute, no a method
+        char [] arg = strL.toCharArray();
+        String [] arg2 = strL.split(" ");
+        int longs = arg.length;
+        int longs2 = arg2.length;
+
+        for (int i = 0; i < longs; i++){
+            //System.out.println("arg[i] = " + arg[i]);
+            System.out.print(arg[i]);
+        }
+
+        for (int i = 0; i < longs2; i++) {
+            System.out.println(arg2[i]);
+        }
+
+        System.out.println("\n");
+        System.out.println("   Jhon Doe End Examples  ".trim()); // take spaces
+
     }
 }
