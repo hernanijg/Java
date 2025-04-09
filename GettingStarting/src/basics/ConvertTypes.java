@@ -10,7 +10,7 @@ public class ConvertTypes {
         System.out.println("num Byte = " + numByte);
 
         // str => double / float
-        numStr = "50.4";
+        numStr = "5032.34e4";
         double realDouble = Double.parseDouble(numStr);
         System.out.println("real Double = " + realDouble);
 
@@ -21,5 +21,38 @@ public class ConvertTypes {
 
         /* var only take the end */
 
+        // Basic Convert
+        int otherNumInt = 50;
+        String otherNumStr = Integer.toString(otherNumInt);
+        System.out.println("other Num Str = " + otherNumStr);
+
+        /*
+         sobrecarga de metodo (valueOf) int / byte / short / long
+         Si es String + int concatena
+         int + int suma
+         */
+
+        otherNumStr = String.valueOf(otherNumStr);
+        System.out.println("otherNumStr = " + otherNumStr);
+
+        // Double and float / double
+        String otherRealStr = Double.toString(realDouble);
+        System.out.println("otherRealStr = " + otherRealStr);
+        // value.of work to
+        float otherRealFloat = 100.32E2f;
+        otherRealStr = String.valueOf(otherRealFloat);
+        System.out.println("otherRealFloat = " + otherRealFloat);
+
+        // force convert and lose information
+        int i = 32767;
+        short s = (short) i; // force/cast convert (32768 error)
+        System.out.println("s = " + s);
+        long l = i;
+        System.out.println("l = " + l);
+        
+        char c = (char) i; //character Unicode 翿
+        System.out.println("c = " + c);
+        float f = (float) i;
+        System.out.println("f = " + f);
     }
 }
