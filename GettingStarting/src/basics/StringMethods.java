@@ -3,6 +3,7 @@ package basics;
 public class StringMethods {
     public static void main(String[] args) {
         String strE = "Jhon Doe";
+        String strL = "Jhon Doe create the program universe";
 
         System.out.println("strE.length() = " + strE.length());
         System.out.println("strE.toLowerCase() = " + strE.toLowerCase());
@@ -14,6 +15,16 @@ public class StringMethods {
         System.out.println("strE.substring(2) = " + strE.substring(2));
         System.out.println("strE.substring(2, 5) = " + strE.substring(2, 5));
         System.out.println("strE.substring(strE.length()-1) = " + strE.substring(strE.length()-1));
-        
+
+        //=====
+
+        System.out.println("strL.replace(\"o\", \"O\") = " + strL.replace("o", "O"));
+        System.out.println("strL.indexOf(\"un\") = " + strL.indexOf("un")); // First incident
+        System.out.println("strL.lastIndexOf(\"o\") = " + strL.lastIndexOf("o")); // Last Incident
+        System.out.println("strL.indexOf('z') = " + strL.indexOf("z")); // => -1 (ERROR not found)
+        System.out.println("strL.contains(\"z\") = " + strL.contains("z")); // => False, is same the last one
+        System.out.println("strL.startsWith() = " + strL.startsWith("Jhon")); // => True
+        System.out.println("strL.endsWith(\"<>\") = " + strL.endsWith("<>")); // => False
+        System.out.println("  Jhon Doe End Examples  ".trim()); // take spaces
     }
 }
