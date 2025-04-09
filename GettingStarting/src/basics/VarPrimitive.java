@@ -27,8 +27,9 @@ public class VarPrimitive {
 
         /* String (Default char is u0000) */
         // 16 bites -> 2  byte
-        char _a = 'a';
-        char _b = '\u0021';
+        char _a = 'a'; // Only a character [a-z0-9]
+        char _b = '\u0040'; // Unicode Character like @#$
+        char _b2 = 64; // _b == _b2 = true
         char _c = '\t';
 
         /*EXAMPLES*/
@@ -44,6 +45,14 @@ public class VarPrimitive {
         System.out.println("Float Bytes: " + Float.BYTES);
         System.out.println("Double Bytes: " + Double.BYTES);
 
+        System.out.println("Char Bytes: " + Character.BYTES);
+        /*Char scapes*/
+        char space = '\u0020';
+        char recoil = '\b';
+        char tab = '\t';
+        char newLine = '\n';
+        //System.getProperties("line.separator"); or System.lineSeparator(); >
+        char carReturn = '\r'; // Same newLine Windows and old machintoch
 
         // This is int, no short or byte
         var flexibleVar = 127; // JDK 10 or more
