@@ -66,10 +66,10 @@ public class Strings {
          * las sumas a rangos medios
          * y StringBuilder para todo
          * */
-        for (int i = 0; i < 15000; i++){
+        for (int i = 0; i < 1; i++){
             // c += a + b + "\n"; // 500 => 13ms | 15000 => 216ms
-            c = c.concat(a).concat(b).concat("\n"); // 500 => 5ms | 15000 => 453ms
-            // sb.append(a).append(b).append("\n"); // 500 => 0ms | 15000 => 5ms
+            //c = c.concat(a).concat(b).concat("\n"); // 500 => 5ms | 15000 => 453ms
+            sb.append(a).append(b).append("\n"); // 500 => 0ms | 15000 => 5ms
         }
 
         long end = System.currentTimeMillis();
@@ -78,6 +78,24 @@ public class Strings {
         System.out.println("sb = " + sb.toString());
         System.out.println(end - initial);
 
+        // If string is null, the methods gift error because it don't have reference
+        String strN = null;
+        String strEmpty = "";
+        String strEmpty2 = " ";
+        boolean strNB = strN == null;
+
+        /**
+         * Isblank is more estricto y segura but is only +JDK11
+         * isEmpty take the space
+         */
+        System.out.println("strEmpty = " + strEmpty.isEmpty());
+        System.out.println("strEmpty2 = " + strEmpty2.isBlank());
+        System.out.println("strNB = " + strNB);
+
+        /** This is error => NullPointerException
+         * System.out.println("strN.toLowerCase() = " + strN.toLowerCase());
+         * Se puede concatenar con los +
+        */
 
     }
 }
