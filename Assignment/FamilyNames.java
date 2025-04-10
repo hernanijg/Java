@@ -1,6 +1,6 @@
 package Assignment;
 import java.util.Scanner;
-
+// 2
 public class FamilyNames {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

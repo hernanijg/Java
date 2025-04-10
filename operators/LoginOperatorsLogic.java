@@ -64,6 +64,10 @@ public class LoginOperatorsLogic {
         for (int i = 0; i < usernames.length; i++){
             if(usernames[i].equals(u) && passwords[i].equals(p)){
                 isAuth = true;
+                /**
+                 * same =
+                 * isAuth = (usernames[i].equals(u) && passwords[i].equals(p)) ? true : false
+                 */
                 break;
             }
         }

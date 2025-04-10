@@ -22,6 +22,7 @@ public class TernarioOperator {
         state = promedio >= 5.49 ? "Aprobado" : "Rechazado";
         System.out.printf("state = ".concat(state).concat(" con una nota de %.2f"), promedio);
 
+        System.exit(0);
     }
 
     public static double takeNotes(Scanner scan, String materia){
