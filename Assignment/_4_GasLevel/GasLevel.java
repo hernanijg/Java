@@ -1,9 +1,9 @@
-package Assignment;
+package Assignment._4_GasLevel;
 
 import java.util.Scanner;
 
 // #3
-public class GasOil {
+public class GasLevel {
     public static void main(String[] args) {
         int gas = 0;
         String status = "";

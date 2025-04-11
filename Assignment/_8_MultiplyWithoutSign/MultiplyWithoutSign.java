@@ -1,4 +1,4 @@
-package Assignment;
+package Assignment._8_MultiplyWithoutSign;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Assignment;
+package Assignment._7_StudentNotes;
 
 import java.util.ArrayList;
 import java.util.Scanner;

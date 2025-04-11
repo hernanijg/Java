@@ -1,4 +1,4 @@
-package Assignment;
+package Assignment._2_FamilyNames;
 import java.util.Scanner;
 // 2
 public class FamilyNames {

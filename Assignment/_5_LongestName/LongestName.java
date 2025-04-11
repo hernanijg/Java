@@ -1,9 +1,8 @@
-package Assignment;
+package Assignment._5_LongestName;
 
 import javax.swing.*;
-import java.util.Arrays;
 
-public class FamilyNamesLength {
+public class LongestName {
     public static void main(String[] args) {
         StringBuilder names = new StringBuilder("");
         int familyLength = 0;

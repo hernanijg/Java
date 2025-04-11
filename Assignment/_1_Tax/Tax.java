@@ -1,6 +1,5 @@
-package Assignment;
+package Assignment._1_Tax;
 // #1
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Tax {

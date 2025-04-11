@@ -1,8 +1,8 @@
-package Assignment;
+package Assignment._3_NumberSorting;
 
 import java.util.Scanner;
 
-public class NumbersOrder {
+public class NumbersSorting {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         double a = 0.0, b = 0.0;
