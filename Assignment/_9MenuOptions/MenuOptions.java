@@ -1,4 +1,4 @@
-package Assignment._9_MenuOptions;
+package Assignment._9MenuOptions;
 
 import javax.swing.*;
 import java.util.*;

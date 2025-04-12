@@ -1,4 +1,4 @@
-package Assignment._1_Tax;
+package Assignment._1Tax;
 // #1
 import java.util.Scanner;
 

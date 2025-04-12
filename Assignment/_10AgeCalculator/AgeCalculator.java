@@ -1,4 +1,4 @@
-package Assignment._10_AgeCalculator;
+package Assignment._10AgeCalculator;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

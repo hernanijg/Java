@@ -1,4 +1,4 @@
-package Assignment._6_NumbersCompare;
+package Assignment._6NumbersCompare;
 
 import java.util.Scanner;
 

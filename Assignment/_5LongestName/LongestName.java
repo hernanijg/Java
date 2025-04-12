@@ -1,4 +1,4 @@
-package Assignment._5_LongestName;
+package Assignment._5LongestName;
 
 import javax.swing.*;
 

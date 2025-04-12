@@ -1,4 +1,4 @@
-package Assignment._4_GasLevel;
+package Assignment._4GasLevel;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Assignment._3_NumberSorting;
+package Assignment._3NumberSorting;
 
 import java.util.Scanner;
 
