@@ -21,5 +21,9 @@ public class Dates {
         String dateStr = df.format(date);
 
         System.out.println("dateStr = " + dateStr);
+
+        Date date2 = new Date();
+        long dateEnd = date2.getTime() - date.getTime(); // Milisegundos
+        System.out.println("dateEnd = " + dateEnd);
     }
 }
