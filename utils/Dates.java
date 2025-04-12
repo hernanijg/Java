@@ -14,7 +14,12 @@ public class Dates {
          * dd => Int Day
          * MMMM => String Month
          * MM => Int Month
-         * YYYY => Year
+         * yyyy => Int Year
+         * a => String AM_PM
+         * hh => Int Hour
+         * mm => Int Minut
+         * ss => Int Second
+         * SS => Int Milisecond
          * for custom text we need use '' => 'to'
          */
         SimpleDateFormat df = new SimpleDateFormat("EE dd 'to' MMMM, yyyy");
