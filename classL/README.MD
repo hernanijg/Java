@@ -1,7 +1,7 @@
 # Java Wrapper Classes Explorer
 
 ## 📦 Overview
-This demonstration showcases Java's wrapper classes and their utility methods for primitive type conversions and value manipulation. The code examples highlight common operations with `Integer`, `Double`, `Long`, and `Character` wrapper classes.
+This demonstration showcases Java's classL classes and their utility methods for primitive type conversions and value manipulation. The code examples highlight common operations with `Integer`, `Double`, `Long`, and `Character` classL classes.
 
 ## ✨ Key Features Demonstrated
 - **Value Conversion**: Seamless primitive ↔ object conversions
@@ -48,7 +48,7 @@ if (Character.isUpperCase(inputChar)) {
 ```
 
 ## 🌟 Key Takeaways
-Number wrapper classes do automatic unboxing
+Number classL classes do automatic unboxing
 - **Autoboxing**: Syntactic sugar for `Integer.valueOf()`
 - **Unboxing**: Hidden `intValue()` calls
 - **Cache Range**: `-128 to 127` (for `Integer.valueOf()`)
