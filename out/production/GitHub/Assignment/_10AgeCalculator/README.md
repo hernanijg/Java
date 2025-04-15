@@ -32,5 +32,5 @@ Enter birth date (yyyy-MM-dd):
 Age: 33
 
 Enter birth date (yyyy-MM-dd):
-2025-01-01
+2026-01-01
 The person hasn't been born yet.

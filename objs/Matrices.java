@@ -41,6 +41,34 @@ public class Matrices {
             System.out.println();
         }
 
+
+        // Variable Matriz
+        int count = 4;
+        int[][] matriz = new int[count][];
+        int l = 1;
+
+        for (int i = 0; i < count; i++){
+            matriz[i] = new int[i+1];
+            for (int j = 0; j < i+1; j++){
+                matriz[i][j] = l;
+                l++;
+                System.out.print("*\t");
+            }
+            System.out.println();
+
+            //System.out.println("Arrays.toString(matriz[i]) = " + Arrays.toString(matriz[i]));
+        }
+        System.out.println();
+        int la = 4;
+        int an = 4;
+
+        for (int i = 0; i < la; i++){
+            for (int j = an; j > 0; j--){
+                System.out.print("*\t");
+            }
+            System.out.println();
+            an--;
+        }
     }
 
 }
