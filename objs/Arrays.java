@@ -10,21 +10,13 @@ public class Arrays {
         };
 
         // Burble method =>
-        int total = product.length;
+        sortBurbuja(product);
 
-        for (int i = 0; i < total - 1; i++){
-            for (int j = 0; j < total - 1 - i; j++){
-                // For int compare to only compare Integer
-                if(product[j+1].compareTo(product[j]) < 0){
-                    // Compare j0 to j1 and continue with j1 to j2 and follow
-                    String aux = product[j];
-                    product[j] = product[j+1];
-                    product[j+1] = aux;
-                }
-            }
-        }
+        System.out.println(java.util.Arrays.toString(product));
 
     }
+
+    // Burble method
     public static void sortBurbuja(Object[] arg){
         int total = arg.length, count = 0;
 
