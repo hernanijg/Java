@@ -31,6 +31,7 @@ public class CombineArrays {
          * and consume fewer resources
          * @We can iterar by 3 too, only change i+=2 for i+=3 and j < 2 for j < 3
          * but that is only for arrays divisible by 3
+         * @This is a difference organice, take care
          */
         for (int i = 0; i < b.length; i+=2) {
             for (int j = 0; j < 2; j++) {
