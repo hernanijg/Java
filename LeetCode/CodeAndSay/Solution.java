@@ -27,6 +27,5 @@ public class Solution {
         }
         result.append(count).append(prev.charAt(prev.length()-1));
         return result.toString();
-
     }
 }
