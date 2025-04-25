@@ -24,8 +24,7 @@ public class DeleteArray {
         // This copy by a[0] in b[0] to b[9]
         System.arraycopy(a, 0, b, 0, b.length);
         for (int i = 0; i < b.length; i++) {
-            System.out.println(i +" => " + b[i]);
-
+            System.out.println(i +" => " + b[i])
         }
     }
 }
