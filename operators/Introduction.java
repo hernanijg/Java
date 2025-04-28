@@ -28,8 +28,6 @@ public class Introduction {
          * a != b a Diferente a b
          * En los operadores logicos con uno solo (| or &) no tiene efecto cortocircuito
          */
-
-
     }
 }
 
