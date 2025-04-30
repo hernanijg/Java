@@ -31,7 +31,6 @@ public class AgeCalculator {
             main(args);
             return;
         }
-
         // Get current date and set birth date for comparison
         Calendar currentC = Calendar.getInstance();
         Calendar bornC = Calendar.getInstance();
