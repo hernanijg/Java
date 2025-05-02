@@ -22,7 +22,6 @@ public class Car {
         this.nameCar = nameCar;
         this.brandCar = brandCar;
     }
-
     /*
     * The public methos can assign values to own private methods
     * and return that to another files, like Absorb.java
