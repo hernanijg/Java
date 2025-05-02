@@ -1,4 +1,4 @@
-package customCLass;
+package customCLass.CarClass;
 
 public class Car {
     /*
@@ -7,7 +7,9 @@ public class Car {
     * same for return info like => getNameCar();
     * */
     private String nameCar;
-    private String brandCar;
+    private BrandCarE brandCar;
+
+    private BrandCarE tipo;
 
     /*
     * Standard Constructor
@@ -18,7 +20,7 @@ public class Car {
     public Car(String nameCar){
         this.nameCar = nameCar;
     }
-    public Car(String nameCar, String brandCar){
+    public Car(String nameCar, BrandCarE brandCar){
         this.nameCar = nameCar;
         this.brandCar = brandCar;
     }
@@ -31,7 +33,7 @@ public class Car {
         this.nameCar = nameCar;
     }
 
-    public void setBrandCar(String brandCar) {
+    public void setBrandCar(BrandCarE brandCar) {
         this.brandCar = brandCar;
     }
 
@@ -39,7 +41,7 @@ public class Car {
         return nameCar; // We can return private values
     }
 
-    public String getBrandCar() {
+    public BrandCarE getBrandCar() {
         return brandCar;
     }
 
