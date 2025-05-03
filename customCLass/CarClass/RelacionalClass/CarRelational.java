@@ -1,6 +1,6 @@
 package customCLass.CarClass.RelacionalClass;
 
-public class CarRelational {
+public class CarRelational implements Comparable<CarRelational>{
     private int id;
     private Engine engine;
     private Tank tank;
@@ -50,5 +50,18 @@ public class CarRelational {
                 + "\nTank capacity: " + this.tank.getCapacity()
                 + "\nPerson name: " + this.person.getName()
                 + "\nPerson lastname: " + this.person.getLastname();
+    }
+
+    @Override
+    public String toString() {
+        return "CarRelational{" +
+                "id=" + id +
+                ", person=" + person +
+                '}';
+    }
+
+    @Override
+    public int compareTo(CarRelational a) {
+        return person.getName().compareTo(a.person.getName());
     }
 }
