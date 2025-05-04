@@ -30,7 +30,7 @@ public class NewOrder {
         printOrder(order2);
         // ====
 
-        // Order #1
+        // Order #3
         PurchaseOrder order3 = new PurchaseOrder("Order #3");
         order3.setClient(new Client("Mauro", "Perez"));
         order3.setDate(new Date());
