@@ -6,7 +6,7 @@ This Java project provides a simple object-oriented structure to represent peopl
 
 1. Compile all `.java` files:
 ```bash
-java Assignment/CompanyPeople/*.java
+javac Assignment/CompanyPeople/*.java
 ```
 2. Run the main class:
 ```bash
