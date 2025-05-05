@@ -1,4 +1,4 @@
-package Assignment.CompanyPeople;
+package Assignment._12CompanyPeople;
 
 public class Employee extends Person{
     private double remuneration;

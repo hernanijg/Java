@@ -1,4 +1,4 @@
-package Assignment.CompanyPeople;
+package Assignment._12CompanyPeople;
 
 public class Client extends Person{
     private int clientId;

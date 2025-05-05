@@ -2,7 +2,16 @@
 
 This Java project provides a simple object-oriented structure to represent people in a company environment. It includes different roles such as **Client**, **Employee**, and **Manager**, all inheriting from a common base class `Person`. It's a great example for understanding inheritance, encapsulation, constructors, method overriding, and class relationships in Java.
 
+## ▶️ How to Run
 
+1. Compile all `.java` files:
+```bash
+java Assignment/CompanyPeople/*.java
+```
+2. Run the main class:
+```bash
+java Assignment._12CompanyPeople.Consume
+```
 ---
 
 ## 🧱 Class Overview
@@ -25,18 +34,6 @@ Holds general information like:
 - Inherits all from `Employee` and adds a `budget` field.
 
 ---
-
-## ▶️ How to Run
-
-1. Compile all `.java` files:
-```bash
-javac Assignment/CompanyPeople/*.java
-```
-2. Run the main class:
-```bash
-java Assignment.CompanyPeople.Consume
-```
-
 ## 🧪 Output Example
 ```yaml
 ===== New Employer Info:
