@@ -42,6 +42,14 @@ public class EjFormElementes {
             System.out.println(e.writeHtml());
         }
 
+        //Anon Class (This is only for one use)
+        ElementForm s = new ElementForm() {
+            @Override
+            public String writeHtml() {
+                return "New example";
+            }
+        };
 
+        System.out.println(s.writeHtml());
     }
 }
