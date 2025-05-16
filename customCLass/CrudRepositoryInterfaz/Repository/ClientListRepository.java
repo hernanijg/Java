@@ -53,31 +53,33 @@ public class ClientListRepository implements CrudRepository,
 
     @Override
     public List<Client> list(String c, Address address) {
+        List<Client> sortList = new ArrayList<>(this.dataSource);
 
-        dataSource.sort((a, b) -> {
+        sortList.sort((a,b) -> {
                 int result = 0;
                 if(address == Address.ASC){
-                    switch (c) {
-                        case "id" -> result = a.getId().compareTo(b.getId());
-                        case "name" -> result = a.getName().compareTo(b.getName());
-                        case "lastname" -> result = a.getLastname().compareTo(b.getLastname());
-                    }
+                    result = sorted(a, b, c);
                 } else if(address == address.DESC) {
-                    switch (c) {
-                        case "id" -> result = b.getId().compareTo(a.getId());
-                        case "name" -> result = b.getName().compareTo(a.getName());
-                        case "lastname" -> result = b.getLastname().compareTo(a.getLastname());
-                    }
+                    result = sorted(b, a, c);
                 }
                 return result;
-            }
-        );
+        });
 
-        return dataSource;
+        return sortList;
     }
 
     @Override
     public List<Client> list(int from, int to) {
         return dataSource.subList(from, to);
+    }
+
+    private int sorted(Client a, Client b, String c) {
+        int result = 0;
+        switch (c) {
+            case "id" -> result = a.getId().compareTo(b.getId());
+            case "name" -> result = a.getName().compareTo(b.getName());
+            case "lastname" -> result = a.getLastname().compareTo(b.getLastname());
+        }
+        return result;
     }
 }

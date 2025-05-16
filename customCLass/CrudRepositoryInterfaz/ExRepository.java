@@ -21,7 +21,7 @@ public class ExRepository {
         pagRepo.forEach(System.out::println);
 
         System.out.println("===== Sort =====");
-        List<Client> sortRepo = ((SortedRepository)repo).list("name", Address.ASC);
+        List<Client> sortRepo = ((SortedRepository)repo).list("name", Address.DESC);
         sortRepo.forEach(System.out::println);
 
         System.out.println("===== Edit =====");
