@@ -17,5 +17,7 @@ public class NumbersSorting {
                 ? (a + ", " + b)
                 : (b + ", " + a)
         ));
+
+        scan.close();
     }
 }

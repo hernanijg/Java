@@ -28,6 +28,7 @@ public class MultiplyWithoutSign {
 
 
         System.out.println("result = " + result);
+        scan.close();
         System.exit(0);
     }
 }

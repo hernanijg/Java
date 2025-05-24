@@ -45,6 +45,7 @@ public class NumbersCompare {
         }
 
         System.out.println("max = " + max);
+        scan.close();
         System.exit(0);
     }
 }

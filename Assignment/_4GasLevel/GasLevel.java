@@ -27,7 +27,7 @@ public class GasLevel {
         } else {
             status += "Apagado";
         }
-
+        scan.close();
         System.out.println("status = " + status);
     }
 }

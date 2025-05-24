@@ -18,7 +18,7 @@ public class Arrays {
 
     // Burble method
     public static void sortBurbuja(Object[] arg){
-        int total = arg.length, count = 0;
+        int total = arg.length;
 
         // Follow the sentences
         for (int i = 0; i < total - 1; i++){

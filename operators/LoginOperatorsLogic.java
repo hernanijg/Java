@@ -1,14 +1,10 @@
 package operators;
 
-import javax.swing.text.StyledEditorKit;
 import java.util.Scanner;
 
 public class LoginOperatorsLogic {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-
-//        boolean loginUserBasic = loginUserBasic(scan);
-//        System.out.println("loginUserBasic = " + loginUserBasic);
 
         boolean loginUserArray = loginUserArray(scan);
         System.out.println("loginUserArray = " + loginUserArray);
@@ -43,6 +39,7 @@ public class LoginOperatorsLogic {
         scan.nextLine(); // Clean Buffer
         return isAuth;
     }
+
     public static boolean loginUserArray(Scanner scan){
         String[] usernames = new String[2];
         String[] passwords = new String[2];
