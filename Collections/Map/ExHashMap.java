@@ -22,5 +22,17 @@ public class ExHashMap {
         for (Map.Entry<String, String> hma: hm.entrySet()) System.out.println(
                 hma.getKey() + " => " + hma.getValue()
         );
+
+        System.out.println("==============");
+        Map<String, Object> hm2 = new HashMap<>();
+        hm2.put("FirstKet", hm); // We can anidate hashmaps.
+        System.out.println(hm2);
+
+        System.out.println("==============");
+        Map<String, String> hm3 = (Map<String, String>)hm2.get("FirstKet");
+        System.out.println(hm3.get("Name"));
+        System.out.println(hm3.getOrDefault("Name2", "Default Text"));
+
+
     }
 }
