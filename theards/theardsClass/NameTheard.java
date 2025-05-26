@@ -1,5 +1,4 @@
 package theards.theardsClass;
-import java.util.Objects;
 
 public class NameTheard extends Thread {
 

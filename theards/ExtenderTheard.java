@@ -34,5 +34,9 @@ public class ExtenderTheard {
 
         new Thread(travel, "Pascua Islam").start();
         new Thread(travel, "Islam Chiloe").start();
+
+        System.out.println("Continuos...");
+
+        
     }
 }
