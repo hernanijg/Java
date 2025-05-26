@@ -4,7 +4,6 @@ public class UsersStream {
     String name;
     String lastName;
 
-
     public UsersStream(String name, String lastName) {
         this.name = name;
         this.lastName = lastName;
@@ -29,7 +28,7 @@ public class UsersStream {
 
     @Override
     public String toString() {
-        return "name=" + getName() ;
+        return getName() + " " + getLastName() ;
     }
 
 }
